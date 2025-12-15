@@ -28,6 +28,6 @@ jobs:
 
       - name: Ejecutar tests
         env:
-          MONGO_URL: mongodb://localhost:27017/ci_db
+          MONGO_URL: mongodb://localhost:27017/app_db
           NODE_ENV: test
         run: npm test

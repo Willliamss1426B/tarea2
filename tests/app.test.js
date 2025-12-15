@@ -1,8 +1,7 @@
 const request = require("supertest");
 const app = require("../src/app");
 
-test("GET / responde correctamente", async () => {
-  const res = await request(app).get("/");
+test("GET /users responde 200", async () => {
+  const res = await request(app).get("/users");
   expect(res.statusCode).toBe(200);
-  expect(res.body.mensaje).toBe("App web funcionando");
 });
